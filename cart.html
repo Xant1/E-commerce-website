@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+   <!-- ----------navbar-------- -->
+    
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/QLogo.png" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems" >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Өнімдер</a></li>
+              <li><a href="">Біз жайлы</a></li>
+              <li><a href="">Байланыс</a></li>
+              <li><a href="account.html">Аккаунт</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" /></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>        
+      </div>
+
+      <!-- ------------- cart items details ---------- -->
+
+      <div class="small-container cart-page">
+         <table>
+            <tr>
+               <th>Өнім:</th>
+               <th>Саны:</th>
+               <th>Сомасы:</th>
+            </tr>
+            <tr>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/product1.jpg">
+                     <div>
+                        <p>Ақ түсті жиде "SEN"</p>
+                        <small>Бағасы: 17 999 &#8376;</small>
+                        <br>
+                        <a href="">Өшіру</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" ></td>
+               <td>17 999 &#8376; </td>
+            </tr>
+            
+            <tr>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/product2.jpg">
+                     <div>
+                        <p>Қызыд түсті жиде "SEN"</p>
+                        <small>Бағасы: 17 999 &#8376;</small>
+                        <br>
+                        <a href="">Өшіру</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" ></td>
+               <td>17 999 &#8376; </td>
+            </tr>
+            
+            <tr>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/product3.jpg">
+                     <div>
+                        <p>Ақ түсті худи "BORN QZQ"</p>
+                        <small>Бағасы: 27 999 &#8376;</small>
+                        <br>
+                        <a href="">Өшіру</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" ></td>
+               <td>27 999 &#8376; </td>
+            </tr>
+         </table>
+
+         <div class="total-price">
+            <table>
+               <tr>
+                  <td>Сомасы:</td>
+                  <td>63 997 &#8376;</td>
+               </tr>
+               <tr>
+                  <td>Салығы:</td>
+                  <td>6 397 &#8376;</td>
+               </tr>
+               <tr>
+                  <td>Барлығы:</td>
+                  <td>70 394 &#8376;</td>
+               </tr>
+            </table>
+         </div>
+
+
+
+
+
+      </div>
+      
+
+
+
+    <!-- --------footer--------- -->
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Біздің Қосымшаны Жүктеңіз</h3>
+            <p>Қосымшаны Android және Ios ұялы телефонына жүктеу.</p>
+            <div class="app-logo">
+              <a href="https://play.google.com"><img src="images/play-store.png" /></a>
+              <a href="https://www.apple.com/ru/app-store"><img src="images/app-store.png" /></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <a href="index.html"><img src="images/logo-white.png" /></a>
+            <p>
+              Біздің мақсат - адамдардың әдемі стиль қалыптастыруына
+              септігімізді тигізу.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Пайдалы Сілтемелер</h3>
+            <ul>
+              <li>Купондар</li>
+              <li>Блог Жазбасы</li>
+              <li>Өнімді Қайтару Шарттары</li>
+              <li>Серіктестікке Қосылу</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Бізге Жазылыңыз</h3>
+            <ul>
+              <a href="https://www.instagram.com"><li>Instagram</li></a>
+              <a href="https://www.youtube.com"><li>Youtube</li></a>
+              <a href="https://web.telegram.org"><li>Telegram</li></a>
+              <a href="https://www.vk.com"><li>Vkontakte</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright"> &#xa9 Copyright 2022 - Darkhan Zharylkagan</p>
+      </div>
+    </div>
+    
+    <!------- js for toogle menu -------->
+    
+    <script>
+      let MenuItems = document.getElementById("MenuItems")
+
+      MenuItems.style.maxHeight = "0px"
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px"
+        }
+        else {
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+
+  </body>
+</html>

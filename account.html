@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+   <!-- ----------navbar-------- -->
+    
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/QLogo.png" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems" >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Өнімдер</a></li>
+              <li><a href="">Біз жайлы</a></li>
+              <li><a href="">Байланыс</a></li>
+              <li><a href="">Аккаунт</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" width="30px" height="30px" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>        
+      </div>
+
+      <!-- ------------account page------------ -->
+
+
+      <div class="account-page">
+         <div class="container">
+            <div class="row">
+               <div class="col-2">
+                  <img src="images/image1.png" width="100%">
+               </div>
+               <div class="col-2">
+                  <div class="form-container">
+                     <div class="form-btn">
+                        <span onclick="login()">Кіру</span>
+                        <span onclick="register()">Тіркелу</span>
+                        <hr id="Indicator">
+                     </div>
+
+                     <form id="LoginForm">
+                        <input type="text" placeholder="Қолданушы аты" >
+                        <input type="password" placeholder="Құпия сөз" >
+                        <button type="submit" class="btn">Кіру</button>
+                        <a href="">Құпия сөзді ұмыттыңыз</a>
+                     </form>
+
+                     <form id="RegForm">
+                        <input type="text" placeholder="Қолданушы аты" >
+                        <input type="email" placeholder="Электрондық пошта" >
+                        <input type="password" placeholder="Құпия сөз" >
+                        <button type="submit" class="btn">Тіркелу</button>                       
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+    <!-- --------footer--------- -->
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Біздің Қосымшаны Жүктеңіз</h3>
+            <p>Қосымшаны Android және Ios ұялы телефонына жүктеу.</p>
+            <div class="app-logo">
+              <a href="https://play.google.com"><img src="images/play-store.png" /></a>
+              <a href="https://www.apple.com/ru/app-store"><img src="images/app-store.png" /></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <a href="index.html"><img src="images/logo-white.png" /></a>
+            <p>
+              Біздің мақсат - адамдардың әдемі стиль қалыптастыруына
+              септігімізді тигізу.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Пайдалы Сілтемелер</h3>
+            <ul>
+              <li>Купондар</li>
+              <li>Блог Жазбасы</li>
+              <li>Өнімді Қайтару Шарттары</li>
+              <li>Серіктестікке Қосылу</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Бізге Жазылыңыз</h3>
+            <ul>
+              <a href="https://www.instagram.com"><li>Instagram</li></a>
+              <a href="https://www.youtube.com"><li>Youtube</li></a>
+              <a href="https://web.telegram.org"><li>Telegram</li></a>
+              <a href="https://www.vk.com"><li>Vkontakte</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright"> &#xa9 Copyright 2022 - Darkhan Zharylkagan</p>
+      </div>
+    </div>
+    
+    <!------- js for toogle menu -------->
+    
+    <script>
+      let MenuItems = document.getElementById("MenuItems")
+
+      MenuItems.style.maxHeight = "0px"
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px"
+        }
+        else {
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+
+
+    <!-- -----------Js for account Form--------- -->
+
+    <script>
+      let LoginForm = document.getElementById("LoginForm")
+      let RegForm = document.getElementById("RegForm")
+      let Indicator = document.getElementById("Indicator")
+
+      function register(){
+         RegForm.style.transform = "translateX(0px)"
+         LoginForm.style.transform = "translateX(0px)"
+         Indicator.style.transform = "translateX(100px)"
+      }
+      
+      function login(){
+         RegForm.style.transform = "translateX(300px)"
+         LoginForm.style.transform = "translateX(300px)"
+         Indicator.style.transform = "translateX(0px)"
+      }
+
+    </script>
+
+  </body>
+</html>
